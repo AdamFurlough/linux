@@ -16,4 +16,15 @@ ___________________________________________________
 ___________________________________________________
 
 
+
+chmod o+w data.txt    # adds write to others
+chmod g+x
+
+u user who owns
+g group who owns
+o others nots in group
+a all (user, group, and others)
+
+
 chown
+chown user:group
