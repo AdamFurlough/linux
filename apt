@@ -1,0 +1,10 @@
+sudo apt update    # check for availible updates
+sudo apt upgrade    # apply updates
+
+program specific
+
+apt search coolProgram    #searches for availible programs containing the search term
+apt show coolProgram    #shows details about the program titled "coolProgram", software dependancies, full description
+sudo apt install coolProgram    #installs program
+
+note: apt does the same as apt-get and is newer, apt-get is still recommended for scripts though
