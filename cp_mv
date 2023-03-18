@@ -1,0 +1,4 @@
+cp    #copy origin destination
+mv    #old/location/name new/location/name
+*    #refers to any number of characters, * = all files, *files = all files begining with "files"
+?    #refers to any character but only a single instance, used on its own would only be files with a single character name, files? = would have exactly 6 characters
