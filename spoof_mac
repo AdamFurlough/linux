@@ -1,0 +1,3 @@
+sudo apt install macchanger    #installs macchanger tool
+sudo macchanger -r wlp2s0    #change to a new, random MAC for the interface "wlp2s0"
+macchanger -p wlp2s0    #revert to the original, permenant MAC for the interface "wlp2s0"
