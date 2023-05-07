@@ -20,6 +20,10 @@ mount all disks in the fstab file we just edited
 ```
 sudo mount -a
 ```
+list all drives to check that the disk mounted corectly
+```
+lsblk
+```
 
 ## ALTERNATE COMMANDS
 
@@ -33,9 +37,11 @@ df      #list all drives with mount points
 -h      #list sizes in human readable form
 t ext4  #limit output for ext4 partition type
 ```
-
-
-lsblk     # list all drives
-sudo mount /dev/sdb1 /home/adam/_____
-dmesg | grep wl     #messages, pipe to grep, filter on wl which is how linux names devices meant to connect to wireless lans
-lshw    #list hardware
+messages, pipe to grep, filter on wl which is how linux names devices meant to connect to wireless lans
+```
+dmesg | grep wl
+```
+list hardware
+```
+lshw
+```
