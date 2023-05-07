@@ -1,5 +1,13 @@
 # HOW TO MOUNT DRIVES
 
+find UUID of the disk
+```
+sudo blkid
+```
+create mount point for disk
+```
+sudo mkdir /mnt/exdisk
+```
 open fstab
 ```
 sudo nano /etc/fstab 
@@ -9,19 +17,17 @@ add line like this example (change UUID and others)
 UUID=5a89e403-8061-4aa5-919f-4df66ad2072f /mnt/exdisk ext4 defaults,auto,users,rw,nofail 0 0 
 ```
 
-=======================================================
+## ALTERNATE COMMANDS
 
-df -ht ext4
-df                #list all drives with mount points
--h                #list sizes in human readable form
-t ext4           #limit output for ext4 partition type
-
-
-sudo blkid    #list drives with ids
-
-edit fstab
+list all drives with mount points
 ```
-/dev/sda1: LABEL="hdd" UUID="5a89e403-8061-4aa5-919f-4df66ad2072f" TYPE="ext4" PARTUUID="2292c551-1a7e-47fe-b7b5-88c51196a6fd"
+df -ht ext4
+```
+explanation of above command
+```
+df      #list all drives with mount points
+-h      #list sizes in human readable form
+t ext4  #limit output for ext4 partition type
 ```
 
 
