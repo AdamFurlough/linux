@@ -2,7 +2,7 @@
 
 find UUID of the disk
 ```
-sudo blkid
+blkid
 ```
 create mount point for disk
 ```
