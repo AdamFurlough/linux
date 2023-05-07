@@ -16,6 +16,10 @@ add line like this example (change UUID and others)
 ```
 UUID=5a89e403-8061-4aa5-919f-4df66ad2072f /mnt/exdisk ext4 defaults,auto,users,rw,nofail 0 0 
 ```
+mount all disks in the fstab file we just edited
+```
+sudo mount -a
+```
 
 ## ALTERNATE COMMANDS
 
