@@ -37,11 +37,3 @@ df      #list all drives with mount points
 -h      #list sizes in human readable form
 t ext4  #limit output for ext4 partition type
 ```
-messages, pipe to grep, filter on wl which is how linux names devices meant to connect to wireless lans
-```
-dmesg | grep wl
-```
-list hardware
-```
-lshw
-```
