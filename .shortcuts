@@ -1,0 +1,4 @@
+Ctrl+L is clear screen (alternate to "clear")
+bash-completion is a add on to autofill common bash commands
+cd ... then press and hold "ESC" and press "."   autofills the last aurgument
+cd -    #goes back to last dir
