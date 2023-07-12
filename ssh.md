@@ -1,28 +1,30 @@
-# initial setup
-server (for security don't install server unless you need incomming sessions)
+#SSH
+
+## initial setup
+server 
+(for security don't install server unless you need incomming sessions)
 ```apt install openssh-server```
 
 client
 ```apt install openssh-client```
 
-cofiguration
+##cofiguration
 ```/etc/ssh/sshd_config``` edit to manages systems host behavior
 ```/etc/ssh/ssh_config```    # how your system logs in as client on remote hosts
 
+open files
+```vi authorized_keys```
+```vi sshd_config```
+
+## connect
 connect ```ssh user@192.168.O.O```
 end connection ```exit```
 
--p    # specify port
-ssh -p 2222 ubuntu@192.168.1.97
+specify port```-p```
+example: ```ssh -p 2222 user@192.168.O.O```
 
--i    # point to key (needed for aws ec2)
-ssh -i /home/myusername/mykeyfile.pem ubuntu@192.168.1.97
+point to specific key ```-i```
+example: ```ssh -i /home/myusername/mykeyfile.pem user@192.168.O.O```
 
-scp
-
-scp update-local.sh ubuntu@192.168.1.97:/home/ubuntu
-
-
-## Change files
-```vi authorized_keys```
-```vi sshd_config```
+## scp
+```scp update-local.sh user@192.168.O.O:/home/user```
