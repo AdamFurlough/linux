@@ -1,0 +1,1 @@
+fips-mode-setup --check
