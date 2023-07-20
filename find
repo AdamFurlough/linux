@@ -1,3 +1,6 @@
+sudo find / -name config.yaml
+
+
 find . -size 2220c
 
 b – 512-byte blocks (this is the default if no suffix is used)
