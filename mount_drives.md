@@ -37,3 +37,9 @@ df      #list all drives with mount points
 -h      #list sizes in human readable form
 t ext4  #limit output for ext4 partition type
 ```
+
+## MOUNT NETWORK DRIVES
+- open file system tab ```vim /etc/fstab```
+- list shares for user ubuntu ```smbclient -L 192.168.1.252 -U ubuntu   ```
+- mount share to /mnt ```sudo mount -t cifs -o vers=3.0,username=ubuntu '\192.168.1.252\media2' /mnt```
+- mount share to /mnt ```sudo mount -t cifs -o username=ubuntu //192.168.1.252/media2 /mnt```
