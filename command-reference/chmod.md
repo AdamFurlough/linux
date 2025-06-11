@@ -1,4 +1,4 @@
-chmod
+# chmod
 
 user, group, others
 
