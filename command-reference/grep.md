@@ -1,30 +1,46 @@
-grep 'search term' data.txtreturns whole line with the search term
-searches within text files
-can use directly or pipe to it from other commands
+# grep
 
-grep  word  fileToSearchWithin.txt
-cat  fileToSearchWithin.txt  |  grep word
+The grep command is used to search within text files. It can be used directly or pipe to it from other commands.
 
--v    search for times does not occur / exclude word
--n    show line numbers
--c    show just count of times found
--i    turn off case sensitivity
--r    recursive, search all files within a directory
+## Usage
 
-print bianary files as text:    grep --text    or    grep -a
+### Direct
 
-cat /etc/group | grep > newfile    # overwrites findings to newfile
-cat /etc/group | grep >> newfile    # appends findings to the end of newfile
+`grep <search term> <file>`
 
-head    # print first 10 lines
-tail    # print last 10 lines
+`grep example data.txt`
 
-cut -d: -f3 | sort -n
+returns whole line with the search term
 
--d: means use colon as delimiter
+### Pipe to
 
--f3 means look at the third field
+`cat fileToSearchWithin.txt | grep word`
 
-| sort -n means sort is ascending order (-nr would mean sort in descending order)
+### Options
 
-wc fileName   # word count of "fileName"
+- `-v` - search for times does not occur / exclude word
+- `-n` - show line numbers
+- `-c` - show just count of times found
+- `-i` - turn off case sensitivity
+- `-r` - recursive, search all files within a directory
+- `-d:` - use colon as delimiter
+- `-f3` - means look at the third field
+
+
+### Output
+
+`cat /etc/group | grep > newfile` - overwrites findings to newfile
+
+`cat /etc/group | grep >> newfile` - appends findings to the end of newfile
+
+print binary files as text: `grep --text` or `grep -a`
+
+`head` - print first 10 lines
+
+`tail` - print last 10 lines
+
+`cut -d: -f3 | sort -n`
+
+`| sort -n` - means sort is ascending order (`-nr` would mean sort in descending order)
+
+`wc fileName` - word count of "fileName"
