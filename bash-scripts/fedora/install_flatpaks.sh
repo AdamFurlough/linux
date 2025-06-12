@@ -11,7 +11,6 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 # install dark theme for flatpak  applications 
 flatpak install -y org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark
 
-# Add: Pikabackup
 # List of Flatpak application IDs to install
 apps=(
     "com.obsproject.Studio"
