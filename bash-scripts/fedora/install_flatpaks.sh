@@ -14,11 +14,7 @@ flatpak install -y org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark
 # Add: Pikabackup
 # List of Flatpak application IDs to install
 apps=(
-    "com.github.tchx84.Flatseal"
     "com.obsproject.Studio"
-    "org.qbittorrent.qBittorrent"
-    "fr.handbrake.ghb"
-    "org.bunkus.mkvtoolnix-gui"
     "org.videolan.VLC"
 )
 
