@@ -1,6 +1,6 @@
 # How to use terminal shortcuts
 
-Ctrl+L is clear screen (alternate to "clear")
+`Ctrl+L` is clear screen (alternate to "clear")
 
 bash-completion is a add on to autofill common bash commands
 
