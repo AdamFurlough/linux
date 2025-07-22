@@ -7,6 +7,9 @@ cat /etc/dnf/dnf.conf
 # Update system
 sudo dnf -y upgrade --refresh
 
+# Install utils including config-manager
+sudo dnf install dnf-utils
+
 # Update firmware
 sudo fwupdmgr get-devices 
 sudo fwupdmgr refresh --force 
